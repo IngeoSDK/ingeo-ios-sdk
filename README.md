@@ -8,9 +8,11 @@ For a full list of IngeoSDK features visit: http://ingeo.io/sdk
 
 ## Installation
 
-1. [Download](https://github.com/IngeoSDK/ingeo-ios-sdk/archive/master.zip) as zip file or clone this repository.
-2. Unzip and drag **IngeoSDK.framework** from Framework folder to your project.
-3. Add the following frameworks to your Xcode project (don't worry,  these are dynamic
+1. [Download](https://github.com/IngeoSDK/ingeo-ios-sdk/archive/master.zip) as zip file or clone this repository.  
+
+2. Unzip and drag **IngeoSDK.framework** from *Framework* folder to your project.
+
+3. Add the following frameworks to your Xcode project (don't worry, these are dynamic
    bindings and will not increase your app size):   
    *CoreLocation*  
    *CoreData*  
@@ -21,17 +23,15 @@ For a full list of IngeoSDK features visit: http://ingeo.io/sdk
    In Xcode, Go to 'Build Settings' -> 'Linking' -> 'Other Linker Flags'.  
    Enter **-ObjC** and save.
 
-5. Import IngeoSDK with: 
+5. Import
    ```objc
    #import <IngeoSDK/IngeoSDK.h>
    ```
-
-6. Initialize
+6. Initialize  
    Add the following line in your Controller (viewDidLoad or wherever you want):  
    ```objc
    [IGLocationManager initWithDelegate:self secretAPIKey:@"APIKEYGOESHERE"];
    ```
-
 7. Start Location Monitoring
    ```objc
    [IGLocationManager startUpdatingLocation];
