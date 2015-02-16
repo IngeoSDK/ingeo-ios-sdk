@@ -20,13 +20,20 @@ You get always-ON location awareness while keeping low battery consumption.
 4. Linker Settings  
    In Xcode, Go to 'Build Settings' -> 'Linking' -> 'Other Linker Flags'.  
    Enter **-ObjC** and save.
-   
-5. 
-6. Configure ‘other linker flags’ to “-Objc”
-5. Import IngeoSDK with: #import <IngeoSDK/IngeoSDK.h>
-6. Initialize and start 
-7. Add the following line in your application:didFinishLaunchingWithOptions:
-method with your API key: 
+
+5. Import IngeoSDK with: 
+   ```#import <IngeoSDK/IngeoSDK.h>```
+
+6. Initialize
+   Add the following line in your Controller (viewDidLoad or wherever you want):  
+   ```
+   [IGLocationManager initWithDelegate:self secretAPIKey:@"APIKEYGOESHERE"];
+   ```
+
+7. Start Location Monitoring
+   ```
+   [IGLocationManager startUpdatingLocation];
+   ```
 
 ## USAGE
 
