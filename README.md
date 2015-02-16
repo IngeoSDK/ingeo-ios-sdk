@@ -27,11 +27,13 @@ For a full list of IngeoSDK features visit: http://ingeo.io/sdk
    ```objc
    #import <IngeoSDK/IngeoSDK.h>
    ```
+   
 6. Initialize  
    Add the following line in your Controller (viewDidLoad or wherever you want):  
    ```objc
    [IGLocationManager initWithDelegate:self secretAPIKey:@"APIKEYGOESHERE"];
    ```
+   
 7. Start Location Monitoring
    ```objc
    [IGLocationManager startUpdatingLocation];
