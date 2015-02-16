@@ -22,16 +22,18 @@ You get always-ON location awareness while keeping low battery consumption.
    Enter **-ObjC** and save.
 
 5. Import IngeoSDK with: 
-   ```#import <IngeoSDK/IngeoSDK.h>```
+   ```objc
+   #import <IngeoSDK/IngeoSDK.h>
+   ```
 
 6. Initialize
    Add the following line in your Controller (viewDidLoad or wherever you want):  
-   ```
+   ```objc
    [IGLocationManager initWithDelegate:self secretAPIKey:@"APIKEYGOESHERE"];
    ```
 
 7. Start Location Monitoring
-   ```
+   ```objc
    [IGLocationManager startUpdatingLocation];
    ```
 
