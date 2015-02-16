@@ -2,9 +2,9 @@
 
 ## Overview
 
-IngeoSDK for iOS is a drop-in framework which is super easy to integrate and use.
-It adds full location based capabilities to your app with just few lines of code.
-You get always-ON location awareness while keeping low battery consumption.
+IngeoSDK is a location library for iOS which powers your app with an always-ON (24/7) location awareness while keeping low battery consumption. It uses unique algorithms to dynamically adjust GPS power and monitoring mode according to user behaviour and whereabouts. Battery consumption is just 2% per hour. We believe that location monitoring should be simple and should just-work, so you focus on building your app.
+
+For a full list of IngeoSDK features visit: http://ingeo.io/sdk
 
 ## Installation
 
