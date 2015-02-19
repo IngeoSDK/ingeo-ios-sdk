@@ -23,24 +23,35 @@ For a full list of IngeoSDK features visit: http://ingeo.io/sdk
    In Xcode, Go to 'Build Settings' -> 'Linking' -> 'Other Linker Flags'.  
    Enter **-ObjC** and save.
 
-5. Import
+5. Background Modes
+   In Xcode, Go to 'Capabilities' -> 'Background Modes'
+   Enable 'Location updates' mode.
+
+6. Info.plist
+   Edit your app's Info.plist and add the following String key:
+   NSLocationAlwaysUsageDescription
+
+## USAGE
+
+1. Import
    ```objc
    #import <IngeoSDK/IngeoSDK.h>
    ```
    
-6. Initialize  
+2. Initialize  
    Add the following line in your Controller (viewDidLoad or wherever you want):  
    ```objc
    [IGLocationManager initWithDelegate:self secretAPIKey:@"APIKEYGOESHERE"];
    ```
    
-7. Start Location Monitoring
+3. Start Location Monitoring
    ```objc
    [IGLocationManager startUpdatingLocation];
    ```
 
-## USAGE
-
+4. That's it. you've just enabled location monitoring for your app.
+   You should now focus on building great location based features!
+   Login to http://admin.ingeo.io to access the analytics dashboard.
 
 ## LICENCE
 
