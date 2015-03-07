@@ -2,9 +2,9 @@
 
 ## Overview
 
-IngeoSDK is a location library for iOS which powers your app with an always-ON (24/7) location awareness while keeping low battery consumption. It uses unique algorithms to dynamically adjust GPS power and monitoring mode according to user behaviour and whereabouts. Battery consumption is just 2% per hour. We believe that location monitoring should be simple and should just-work, so you focus on building your app.
+IngeoSDK is a location library for iOS which powers your app with an always-ON (24/7) location awareness while keeping low battery consumption. It uses unique algorithms to dynamically adjust GPS power and monitoring mode according to user behaviour and whereabouts. Built to support iOS7 and iOS8, your app will get constant stream of location data while in foreground or background. Battery consumption is just 2% per hour. We believe that location monitoring should be simple and should just-work, so you focus on building your app.
 
-For a full list of IngeoSDK features visit: http://ingeo.io/sdk
+For a full list of features visit: http://ingeo.io/sdk
 
 ## Installation
 
@@ -23,11 +23,11 @@ For a full list of IngeoSDK features visit: http://ingeo.io/sdk
    In Xcode, Go to 'Build Settings' -> 'Linking' -> 'Other Linker Flags'.  
    Enter **-ObjC** and save.
 
-5. Background Modes
+5. Background Modes  
    In Xcode, Go to 'Capabilities' -> 'Background Modes'
    Enable 'Location updates' mode.
 
-6. Info.plist
+6. Info.plist  
    Edit your app's Info.plist and add the following String key:
    NSLocationAlwaysUsageDescription
 
@@ -38,20 +38,35 @@ For a full list of IngeoSDK features visit: http://ingeo.io/sdk
    #import <IngeoSDK/IngeoSDK.h>
    ```
    
-2. Initialize  
-   Add the following line in your Controller (viewDidLoad or wherever you want):  
+2. Delegate yourself  
+   ```objc
+   @interface ViewController () <IGLocationManagerDelegate>
+   ```
+   
+3. Initialize  
    ```objc
    [IGLocationManager initWithDelegate:self secretAPIKey:@"APIKEYGOESHERE"];
    ```
    
-3. Start Location Monitoring
+4. Start Location Monitoring
    ```objc
    [IGLocationManager startUpdatingLocation];
    ```
 
-4. That's it. you've just enabled location monitoring for your app.
-   You should now focus on building great location based features!
-   Login to http://admin.ingeo.io to access the analytics dashboard.
+5. Get tha honney  
+   Override IGLocationManagerDelegate methods in your delegate:  
+   ```objc
+   - (void)igLocationManager:(IGLocationManager *)manager didUpdateLocation:(IGLocation *)igLocation {
+      NSLog(@"didUpdateLocation: %@", [igLocation description]);
+   }
+
+   - (void)igLocationManager:(IGLocationManager *)manager didDetectMotionState:(IGMotionState)motionState {
+      NSLog(@"didDetectMotionState: %@",[IGLocation stringForMotionState:motionState]);
+   }
+   ```
+
+4. That's it. you've just enabled location monitoring for your app.  
+   You may also login to http://admin.ingeo.io to access the analytics dashboard.
 
 ## LICENCE
 
