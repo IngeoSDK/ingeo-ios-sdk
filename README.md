@@ -21,10 +21,10 @@ For a full list of features visit: http://ingeo.io/sdk
 
 4. Linker Settings  
    In Xcode, Go to 'Build Settings' -> 'Linking' -> 'Other Linker Flags'.  
-   Enter **-ObjC** and save.
+   Enter **-ObjC**
 
 5. Background Modes  
-   In Xcode, Go to 'Capabilities' -> 'Background Modes'
+   In Xcode, Go to 'Capabilities' -> 'Background Modes'  
    Enable 'Location updates' mode.
 
 6. Info.plist  
@@ -69,7 +69,7 @@ For a full list of features visit: http://ingeo.io/sdk
    You may also login to http://admin.ingeo.io to access the analytics dashboard.
 
 ## API Documentation
-   Full API reference (appledoc) can be found here: http://ingeo.io/sdk/docs
+   Full API reference (appledoc): http://ingeo.io/sdk/docs
 
 
 ## FEEDBACK
