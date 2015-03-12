@@ -31,7 +31,7 @@ For a full list of features visit: http://ingeo.io/sdk
    Edit your app's Info.plist and add the following String key:
    NSLocationAlwaysUsageDescription
 
-## USAGE
+## Usage
 
 1. Import
    ```objc
@@ -65,11 +65,12 @@ For a full list of features visit: http://ingeo.io/sdk
    }
    ```
 
-4. That's it. you've just enabled constant location monitoring.  
+6. That's it. you've just enabled constant location monitoring.  
    You may also login to http://admin.ingeo.io to access the analytics dashboard.
 
 ## API Documentation
    Full API reference (appledoc): http://ingeo.io/sdk/docs
 
+## Feedback
+   Feel free to contact us at support@ingeo.io or open an issue here.
 
-## FEEDBACK
