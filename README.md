@@ -68,7 +68,8 @@ For a full list of features visit: http://ingeo.io/sdk
 4. That's it. you've just enabled constant location monitoring.  
    You may also login to http://admin.ingeo.io to access the analytics dashboard.
 
-## LICENCE
+## API Documentation
+   Full API reference (appledoc) can be found here: http://ingeo.io/sdk/docs
 
 
 ## FEEDBACK
