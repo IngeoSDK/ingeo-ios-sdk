@@ -9,4 +9,3 @@
 #import <IngeoSDK/IGLocationManager.h>
 #import <IngeoSDK/IGLocation.h>
 
-
