@@ -61,7 +61,6 @@ typedef NS_ENUM(NSInteger, IGMotionState) {
 /**
  Returns the longitude of the location (in degrees)
  */
-
 @property(readonly, nonatomic) double longitude;
 
 /**
@@ -69,7 +68,7 @@ typedef NS_ENUM(NSInteger, IGMotionState) {
  
  speed attribute provided by IGLocation is far more accurate than speed attribue provided by Apple's CLLocation
  */
-@property(readonly, nonatomic) CLLocationSpeed speed;
+- (CLLocationSpeed)speed;
 
 /**
  True if IGLocation object was created during background app mode

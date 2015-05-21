@@ -61,6 +61,28 @@
  */
 + (void)setUserId:(NSString *)userId;
 
+/**
+ Set custom server URL for submitting location updates
+ 
+ You may wish to submit location updates to your own server. Your server should respond to POST requests on this URL containing the IGLocation object in JSON format.
+ Note: Ingeo backend support gets disabled once a custom server URL is set.
+ 
+ @param url The URL for submitting location updates
+ */
++ (void)setCustomServerURL:(NSString *)url;
+
+/**
+ Set custom HTTP headers for location update POST requests
+ 
+ If you choose to set a custom server URL for submitting location updates, you may also want
+ to set custom HTTP headers (for authentication and such) with the outgoing location POST request.
+ Simply provide a dictionary where keys represent the HTTP header names, and values represent the coresponding HTTP header values.
+ 
+ @param headers A dictionary containing your custom HTTP headers
+ */
++ (void)setCustomHTTPHeaders:(NSDictionary *)headers;
+
+
 ///---------------------------------------------------------------------------------------
 /// @name ￼Location Monitoring Activation and Deactivation
 ///---------------------------------------------------------------------------------------
