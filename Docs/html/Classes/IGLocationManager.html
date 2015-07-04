@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>IGLocationManager Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">IngeoSDK for iOS </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">IngeoSDK</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/currentLocation">+ currentLocation</option>
+		
+		<option value="//api/name/currentMotionState">+ currentMotionState</option>
+		
+		<option value="//api/name/delegate">+ delegate</option>
+		
+		<option value="//api/name/initWithDelegate:secretAPIKey:">+ initWithDelegate:secretAPIKey:</option>
+		
+		<option value="//api/name/secretAPIKey">+ secretAPIKey</option>
+		
+		<option value="//api/name/setCustomHTTPHeaders:">+ setCustomHTTPHeaders:</option>
+		
+		<option value="//api/name/setCustomServerURL:">+ setCustomServerURL:</option>
+		
+		<option value="//api/name/setIngeoBackendSupport:">+ setIngeoBackendSupport:</option>
+		
+		<option value="//api/name/setUserId:">+ setUserId:</option>
+		
+		<option value="//api/name/startUpdatingLocation">+ startUpdatingLocation</option>
+		
+		<option value="//api/name/stopUpdatingLocation">+ stopUpdatingLocation</option>
+		
+		<option value="//api/name/userId">+ userId</option>
+		
+	</optgroup>
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">IGLocationManager Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>IGLocationManager.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>IGLocationManager is the central point for interacting with IngeoSDK. it provides configuration interface, activation methods and easy retriveal of location data.
+IGLocationManager does several (annoying) tasks for you, so you should worry less and focus on coding your app:</p>
+
+<ul>
+<li>It handles the request for permission for location services from your users.</li>
+<li>It is already configured for optimal usage and lowest battery consumption possible.</li>
+<li>It runs in background to constantly deliver you with accurate location updates.</li>
+<li>It provides you with the physical Motion State of your users (Standing, Started Moving, Moving Slow or Moving Fast).</li>
+<li>It filters out noise and inaccurate or irrelevant location updates.</li>
+<li>It resports anonymous location updates to Ingeo backend server to provide you with great Analytics Dashboard (can be disabled using <a href="#//api/name/setIngeoBackendSupport:"><code>setIngeoBackendSupport:</code></a>).</li>
+</ul>
+
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						<a title="￼Initialize and Setup" name="task_￼Initialize and Setup"></a>
+						<h2 class="task-title">￼Initialize and Setup</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/initWithDelegate:secretAPIKey:" title="initWithDelegate:secretAPIKey:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithDelegate:secretAPIKey:">+&nbsp;initWithDelegate:secretAPIKey:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initializes and authenticates IGLocationManager with <a href="#//api/name/delegate">delegate</a> and secret API key</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (id)initWithDelegate:(id&lt;IGLocationManagerDelegate&gt;)<em>delegate</em> secretAPIKey:(NSString *)<em>key</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>The <a href="#//api/name/delegate">delegate</a> object to receive update events.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>key</code></th>
+						<td><p>The secret API key you recieved from Ingeo.io.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IGLocationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setIngeoBackendSupport:" title="setIngeoBackendSupport:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setIngeoBackendSupport:">+&nbsp;setIngeoBackendSupport:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Enable or disable Ingeo backend support.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)setIngeoBackendSupport:(BOOL)<em>flag</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>flag</code></th>
+						<td><p>Boolean flag.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Ingeo backend support is enabled by default, it provides seamless integration with Ingeo Analytics dashboard at <a href="http://admin.ingeo.io">http://admin.ingeo.io</a>
+You may choose to completely disable all communication with Ingeo backend if you wish. By doing so you lose the following functionalities:</p>
+
+<ul>
+<li>Analytics dashboard for user statistics and smart marketing for your app.</li>
+<li>Offline location updates (location updates will not be queued on device while internet is unavailable).</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IGLocationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setUserId:" title="setUserId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setUserId:">+&nbsp;setUserId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set specific User ID</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)setUserId:(NSString *)<em>userId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userId</code></th>
+						<td><p>The User ID you wish to register.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>You may wish to register a specific user ID to be associated with the current user session, this could be your own
+app user ID&rsquo;s or any other required identification you wish to provide.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IGLocationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setCustomServerURL:" title="setCustomServerURL:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setCustomServerURL:">+&nbsp;setCustomServerURL:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set custom server URL for submitting location updates</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)setCustomServerURL:(NSString *)<em>url</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>The URL for submitting location updates</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>You may wish to submit location updates to your own server. Your server should respond to POST requests on this URL containing the <a href="../Classes/IGLocation.html">IGLocation</a> object in JSON format.
+Note: Ingeo backend support gets disabled once a custom server URL is set.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IGLocationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setCustomHTTPHeaders:" title="setCustomHTTPHeaders:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setCustomHTTPHeaders:">+&nbsp;setCustomHTTPHeaders:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set custom HTTP headers for location update POST requests</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)setCustomHTTPHeaders:(NSDictionary *)<em>headers</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>headers</code></th>
+						<td><p>A dictionary containing your custom HTTP headers</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If you choose to set a custom server URL for submitting location updates, you may also want
+to set custom HTTP headers (for authentication and such) with the outgoing location POST request.
+Simply provide a dictionary where keys represent the HTTP header names, and values represent the coresponding HTTP header values.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IGLocationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="￼Location Monitoring Activation and Deactivation" name="task_￼Location Monitoring Activation and Deactivation"></a>
+						<h2 class="task-title">￼Location Monitoring Activation and Deactivation</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/startUpdatingLocation" title="startUpdatingLocation"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startUpdatingLocation">+&nbsp;startUpdatingLocation</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Starts the location monitoring service.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)startUpdatingLocation</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IGLocationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopUpdatingLocation" title="stopUpdatingLocation"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopUpdatingLocation">+&nbsp;stopUpdatingLocation</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Stops the location monitoring service.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)stopUpdatingLocation</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IGLocationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="￼IGLocationManager Configuration Properties" name="task_￼IGLocationManager Configuration Properties"></a>
+						<h2 class="task-title">￼IGLocationManager Configuration Properties</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/delegate">+&nbsp;delegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the <a href="../Protocols/IGLocationManagerDelegate.html">IGLocationManagerDelegate</a> protocol delegate.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (id&lt;IGLocationManagerDelegate&gt;)delegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IGLocationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/secretAPIKey" title="secretAPIKey"></a>
+	<h3 class="method-title"><code><a href="#//api/name/secretAPIKey">+&nbsp;secretAPIKey</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the <a href="../Protocols/IGLocationManagerDelegate.html">IGLocationManagerDelegate</a> secret API key.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)secretAPIKey</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IGLocationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/userId" title="userId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/userId">+&nbsp;userId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the User ID associated with the current session.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)userId</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IGLocationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="￼Retrieve Location Data" name="task_￼Retrieve Location Data"></a>
+						<h2 class="task-title">￼Retrieve Location Data</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/currentLocation" title="currentLocation"></a>
+	<h3 class="method-title"><code><a href="#//api/name/currentLocation">+&nbsp;currentLocation</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a <a href="../Classes/IGLocation.html">IGLocation</a> object representing the latest location measurement taken by IngeoSDK.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (IGLocation *)currentLocation</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IGLocationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/currentMotionState" title="currentMotionState"></a>
+	<h3 class="method-title"><code><a href="#//api/name/currentMotionState">+&nbsp;currentMotionState</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the current user&rsquo;s Motion State.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (IGMotionState)currentMotionState</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IGLocationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 IngeoSDK. All rights reserved. Updated: 2015-07-05</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
