@@ -10,16 +10,18 @@
 #import "IGLocation.h"
 #import "IGLocationManagerDelegate.h"
 
+
+
 @protocol IGLocationManagerDelegate;
 
 /**
  IGLocationManager is the central point for interacting with IngeoSDK. it provides configuration interface, activation methods and easy retriveal of location data.
- IGLocationManager does several (annoying) tasks for you, so you should worry less and focus on coding your app:
+ IGLocationManager does several (annoying) tasks for you:
  
  * It handles the request for permission for location services from your users.
- * It is already configured for optimal usage and lowest battery consumption possible.
+ * It is configured for optimal usage and lowest battery consumption possible.
  * It runs in background to constantly deliver you with accurate location updates.
- * It provides you with the physical Motion State of your users (Standing, Started Moving, Moving Slow or Moving Fast).
+ * It provides you with the physical Motion State of your users (Standing, Walking, Driving slow or Driving fast).
  * It filters out noise and inaccurate or irrelevant location updates.
  * It resports anonymous location updates to Ingeo backend server to provide you with great Analytics Dashboard (can be disabled using `setIngeoBackendSupport:`).
  */
@@ -96,6 +98,7 @@
  Stops the location monitoring service.
  */
 + (void)stopUpdatingLocation;
+
 
 ///---------------------------------------------------------------------------------------
 /// @name ￼IGLocationManager Configuration Properties

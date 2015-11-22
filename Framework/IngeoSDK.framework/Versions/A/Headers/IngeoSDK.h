@@ -8,4 +8,7 @@
 
 #import <IngeoSDK/IGLocationManager.h>
 #import <IngeoSDK/IGLocation.h>
+#import <IngeoSDK/IGNotificationsManager.h>
+#import <IngeoSDK/IGTrigger.h>
+#import <IngeoSDK/IGRegionTrigger.h>
 

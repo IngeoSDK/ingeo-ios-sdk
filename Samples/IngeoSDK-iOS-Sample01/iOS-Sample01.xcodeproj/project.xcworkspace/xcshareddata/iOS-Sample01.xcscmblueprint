@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "76BB338544726B831193349CB3C8CFC024D11596",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "76BB338544726B831193349CB3C8CFC024D11596" : 0,
+    "6BD0D50C2224ABDF16B0AF82691F8B38362BA1C2" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "14B9DC33-B8FA-460B-9A69-B080C7544D49",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "76BB338544726B831193349CB3C8CFC024D11596" : "IngeoSDK-Release",
+    "6BD0D50C2224ABDF16B0AF82691F8B38362BA1C2" : "blobix"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "iOS-Sample01",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Samples\/IngeoSDK-iOS-Sample01\/iOS-Sample01.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "bitbucket.org:scotbond\/blobix.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6BD0D50C2224ABDF16B0AF82691F8B38362BA1C2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:IngeoSDK\/ingeo-ios-sdk.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "76BB338544726B831193349CB3C8CFC024D11596"
+    }
+  ]
+}
