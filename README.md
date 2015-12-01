@@ -9,6 +9,17 @@ get the most relevant streams of location data while in foreground or background
 
 For a full list of features visit: http://ingeo.io/sdk
 
+## Demo, please?
+1. [Download](https://github.com/IngeoSDK/ingeo-ios-sdk/archive/master.zip) as zip file or clone this repository.
+2. Unzip and open the project file in ***Samples/IngeoSDK-iOS-Sample01*** directory using Xcode.
+3. Edit *ViewController.m* to enter your API key in the SDK initializer method (line 26):
+   ```objc
+   [IGLocationManager initWithDelegate:self secretAPIKey:@"APIKEYGOESHERE"];
+   ```
+                     
+   To get a new API key, [Signup](http://admin.ingeo.io/signup.php) for free.  
+4. Now simply run in iOS Simulator or your device and watch the debug console as the demo app takes you traveling through San Fransisco streets (using a recorded GPX file).
+
 ## Installing with CocoaPods
 
 1. Add the following line to your Podfile:  
