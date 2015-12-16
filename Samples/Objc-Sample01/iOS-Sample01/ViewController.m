@@ -20,16 +20,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self deployMap];
+    [self mapSetup];
     
-#error Please use your app secret API key. get it from http://ingeo.io.
+#error Please use your app secret API key. get it at http://ingeo.io/signup.php
     [IGLocationManager initWithDelegate:self secretAPIKey:@"APIKEYGOESHERE"];
     
     [IGLocationManager startUpdatingLocation];
     
 }
 
-- (void)deployMap
+- (void)mapSetup
 {
     _mapView = [[MKMapView alloc] initWithFrame:self.view.frame];
     _mapView.showsUserLocation = YES;

@@ -6,7 +6,8 @@
 //  Copyright (c) 2015 Ingeo. All rights reserved.
 //
 
-#import <IngeoSDK/IngeoSDK.h>
+#import "IGTrigger.h"
+#import <CoreLocation/CLLocation.h>
 
 typedef NS_ENUM(NSInteger, IGRegionEvents) {
     IGRegionEventEntry = 1 << 0,
