@@ -1,11 +1,17 @@
+![IngeoSDK: iOS location tracking made easy (Swift & ObjC)](https://raw.githubusercontent.com/IngeoSDK/ingeo-ios-sdk/assets/IngeoSDK_logo.png)
+
+
+[![Cocoapods Compatible](https://img.shields.io/cocoapods/v/IngeoSDK.svg)](https://img.shields.io/cocoapods/v/IngeoSDK.svg)
+[![Platform](https://img.shields.io/cocoapods/p/IngeoSDK.svg?style=flat)](http://cocoadocs.org/docsets/IngeoSDK)
+
 # IngeoSDK for iOS
 
 ## Overview
 
-IngeoSDK is a power-efficient location library for iOS. It powers your app with
+IngeoSDK is a power-efficient location manager wrapper for iOS (Swift and Objective-C). It powers your app with
 an always-on location tracking. It uses unique algorithms to dynamically adjust GPS power according to user
 behaviour and whereabouts. Built to support iOS7 , iOS8 and iOS9, your app will
-get the most relevant streams of location data while in foreground or background - even when network is disconnected. Battery consumption is just 1% per hour. Location tracking should be automatic and just-work, so you can focus on building your app.
+get the most relevant location data while in foreground or background - even when network is disconnected. Battery consumption is just 1% per hour. Location tracking should be automatic and just-work, so you can focus on building your app.
 
 For a full list of features visit: http://ingeo.io/sdk
 
@@ -32,22 +38,6 @@ For a full list of features visit: http://ingeo.io/sdk
    pod install
    ```
 
-## Too cool for CocoaPods?
-
-1. [Download](https://github.com/IngeoSDK/ingeo-ios-sdk/archive/master.zip) as zip file or clone this repository.  
-
-2. Unzip and drag **IngeoSDK.framework** from *Framework* folder to your project.
-
-3. Add the following frameworks to your Xcode project (don't worry, these are dynamic
-   bindings and will not increase your app size):   
-   *CoreLocation*  
-   *CoreData*  
-   *SystemConfiguration*  
-
-4. Linker Settings  
-   In Xcode, Go to 'Build Settings' -> 'Linking' -> 'Other Linker Flags'.  
-   Enter **-ObjC**
-
 ## Enable Location Services
 
 1. In Xcode, Go to your target settings -> 'Capabilities' -> 'Background Modes'  
@@ -60,11 +50,10 @@ For a full list of features visit: http://ingeo.io/sdk
 
 ## Usage
 
-1. Import IngeoSDK in your *Bridging Header like so:
-   ```objc
-   #import <IngeoSDK/IngeoSDK.h>
+1. Import
+   ```swift
+   import IngeoSDK
    ```
-   *[More info on bridging headers](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html)
 
 2. Set Delegate
    ```swift

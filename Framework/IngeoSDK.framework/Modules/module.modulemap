@@ -1,0 +1,10 @@
+framework module IngeoSDK {
+    umbrella header "IngeoSDK.h"
+
+    export *
+    module * { export * }
+    
+    link framework "CoreLocation"
+    link framework "CoreData"
+    link framework "SystemConfiguration"
+}

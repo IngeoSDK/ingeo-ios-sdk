@@ -16,11 +16,7 @@
 		2873C42A1A51F376008FC614 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2873C4281A51F376008FC614 /* LaunchScreen.xib */; };
 		2873C4361A51F376008FC614 /* iOS_Sample01Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2873C4351A51F376008FC614 /* iOS_Sample01Tests.m */; };
 		288457B31BFCF47500D141EE /* IngeoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288457B21BFCF47500D141EE /* IngeoSDK.framework */; };
-		B48901891A8F8EB100CDD171 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48901881A8F8EB100CDD171 /* CoreData.framework */; };
 		B489018B1A8F8EDB00CDD171 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B489018A1A8F8EDB00CDD171 /* MapKit.framework */; };
-		B489018D1A8F8EE100CDD171 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B489018C1A8F8EE100CDD171 /* CFNetwork.framework */; };
-		B489018F1A8F8EE600CDD171 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B489018E1A8F8EE600CDD171 /* CoreLocation.framework */; };
-		B48901911A8F8EF400CDD171 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48901901A8F8EF400CDD171 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,11 +45,7 @@
 		2873C4341A51F376008FC614 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2873C4351A51F376008FC614 /* iOS_Sample01Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_Sample01Tests.m; sourceTree = "<group>"; };
 		288457B21BFCF47500D141EE /* IngeoSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IngeoSDK.framework; path = ../../../Framework/IngeoSDK.framework; sourceTree = "<group>"; };
-		B48901881A8F8EB100CDD171 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		B489018A1A8F8EDB00CDD171 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		B489018C1A8F8EE100CDD171 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		B489018E1A8F8EE600CDD171 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		B48901901A8F8EF400CDD171 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B48901911A8F8EF400CDD171 /* SystemConfiguration.framework in Frameworks */,
-				B489018F1A8F8EE600CDD171 /* CoreLocation.framework in Frameworks */,
-				B489018D1A8F8EE100CDD171 /* CFNetwork.framework in Frameworks */,
 				B489018B1A8F8EDB00CDD171 /* MapKit.framework in Frameworks */,
 				288457B31BFCF47500D141EE /* IngeoSDK.framework in Frameworks */,
-				B48901891A8F8EB100CDD171 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,11 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				288457B21BFCF47500D141EE /* IngeoSDK.framework */,
-				B48901901A8F8EF400CDD171 /* SystemConfiguration.framework */,
-				B489018E1A8F8EE600CDD171 /* CoreLocation.framework */,
-				B489018C1A8F8EE100CDD171 /* CFNetwork.framework */,
 				B489018A1A8F8EDB00CDD171 /* MapKit.framework */,
-				B48901881A8F8EB100CDD171 /* CoreData.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

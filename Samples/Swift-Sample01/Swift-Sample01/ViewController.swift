@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import IngeoSDK
 
 class ViewController: UIViewController, IGLocationManagerDelegate {
 

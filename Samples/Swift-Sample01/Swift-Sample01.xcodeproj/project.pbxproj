@@ -13,10 +13,7 @@
 		2885CD341C20B4CE003EF39A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2885CD331C20B4CE003EF39A /* Assets.xcassets */; };
 		2885CD371C20B4CE003EF39A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2885CD351C20B4CE003EF39A /* LaunchScreen.storyboard */; };
 		2885CD411C20BCD7003EF39A /* IngeoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2885CD401C20BCD7003EF39A /* IngeoSDK.framework */; };
-		2885CD441C20C288003EF39A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2885CD431C20C288003EF39A /* CoreData.framework */; };
-		2885CD481C20C2D3003EF39A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2885CD471C20C2D3003EF39A /* SystemConfiguration.framework */; };
 		2885CD4A1C20C37A003EF39A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2885CD491C20C37A003EF39A /* MapKit.framework */; };
-		2885CD4C1C20C887003EF39A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2885CD4B1C20C887003EF39A /* CoreLocation.framework */; };
 		2885CD4F1C20CBCF003EF39A /* SF_Trip.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 2885CD4E1C20CBCF003EF39A /* SF_Trip.gpx */; };
 		2885CD511C215DAD003EF39A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2885CD501C215DAD003EF39A /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
@@ -30,12 +27,7 @@
 		2885CD361C20B4CE003EF39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2885CD381C20B4CE003EF39A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2885CD401C20BCD7003EF39A /* IngeoSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IngeoSDK.framework; path = ../../Framework/IngeoSDK.framework; sourceTree = "<group>"; };
-		2885CD421C20BD70003EF39A /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
-		2885CD431C20C288003EF39A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		2885CD451C20C29F003EF39A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		2885CD471C20C2D3003EF39A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		2885CD491C20C37A003EF39A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		2885CD4B1C20C887003EF39A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		2885CD4E1C20CBCF003EF39A /* SF_Trip.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SF_Trip.gpx; sourceTree = "<group>"; };
 		2885CD501C215DAD003EF39A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -45,9 +37,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2885CD4C1C20C887003EF39A /* CoreLocation.framework in Frameworks */,
-				2885CD481C20C2D3003EF39A /* SystemConfiguration.framework in Frameworks */,
-				2885CD441C20C288003EF39A /* CoreData.framework in Frameworks */,
 				2885CD4A1C20C37A003EF39A /* MapKit.framework in Frameworks */,
 				2885CD411C20BCD7003EF39A /* IngeoSDK.framework in Frameworks */,
 			);
@@ -89,11 +78,7 @@
 		2885CD3F1C20BA1F003EF39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2885CD4B1C20C887003EF39A /* CoreLocation.framework */,
 				2885CD491C20C37A003EF39A /* MapKit.framework */,
-				2885CD471C20C2D3003EF39A /* SystemConfiguration.framework */,
-				2885CD451C20C29F003EF39A /* CFNetwork.framework */,
-				2885CD431C20C288003EF39A /* CoreData.framework */,
 				2885CD401C20BCD7003EF39A /* IngeoSDK.framework */,
 			);
 			name = Frameworks;
@@ -102,7 +87,6 @@
 		2885CD4D1C20CBA4003EF39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2885CD421C20BD70003EF39A /* BridgeHeader.h */,
 				2885CD501C215DAD003EF39A /* Default-568h@2x.png */,
 				2885CD381C20B4CE003EF39A /* Info.plist */,
 				2885CD4E1C20CBCF003EF39A /* SF_Trip.gpx */,
@@ -313,7 +297,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.ingeo.Swift-Sample01";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_NAME)/Supporting Files/BridgeHeader.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Debug;
 		};
@@ -329,7 +313,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.ingeo.Swift-Sample01";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_NAME)/Supporting Files/BridgeHeader.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
