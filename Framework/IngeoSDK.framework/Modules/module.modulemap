@@ -7,4 +7,13 @@ framework module IngeoSDK {
     link framework "CoreLocation"
     link framework "CoreData"
     link framework "SystemConfiguration"
+
+    header "IGNotification.h"
+    header "IGNotificationsManager.h"
+    header "IGLocationManagerDelegate.h"
+    header "IGRegionTrigger.h"
+    header "IGTrigger.h"
+    header "IGLocation.h"
+    header "IGLocationManager.h"
+    header "IngeoSDK.h"
 }
