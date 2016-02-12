@@ -1,7 +1,7 @@
 ![IngeoSDK: iOS location tracking made easy (Swift & ObjC)](https://raw.githubusercontent.com/IngeoSDK/ingeo-ios-sdk/assets/IngeoSDK_logo.png)
 
 
-[![Cocoapods Compatible](https://img.shields.io/cocoapods/v/IngeoSDK.svg)](https://img.shields.io/cocoapods/v/IngeoSDK.svg)
+[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/IngeoSDK.svg)](https://img.shields.io/cocoapods/v/IngeoSDK.svg)
 [![Platform](https://img.shields.io/cocoapods/p/IngeoSDK.svg?style=flat)](http://cocoadocs.org/docsets/IngeoSDK)
 
 # IngeoSDK for iOS
