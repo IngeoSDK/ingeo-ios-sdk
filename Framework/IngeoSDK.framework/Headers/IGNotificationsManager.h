@@ -24,7 +24,7 @@
                                  repeat:(BOOL)repeat
                     registerResultBlock:(void (^)(NSError *error, IGNotification *notification))result;
 
-+ (NSArray<IGNotification *> *)activeNotifications;
++ (NSArray *)activeNotifications;
 
 + (BOOL)unregisterNotification:(IGNotification *)notification;
 

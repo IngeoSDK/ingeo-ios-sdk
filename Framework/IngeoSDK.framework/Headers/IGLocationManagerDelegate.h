@@ -34,9 +34,25 @@
 /**
  Tells the delegate that a new Motion State was detected.
  
- @param manager The IGLocationManager object that generated the update event.
- @param motionState The new Motion State the user has just entered into.
+ @param manager The IGLocationManager object that generated the motion state change.
+ @param motionState The Motion State the user is currently at.
  */
 - (void)igLocationManager:(IGLocationManager *)manager didDetectMotionState:(IGMotionState)motionState;
+
+/**
+ Tells the delegate that the user entered the specified region.
+ 
+ @param manager The IGLocationManager object reporting the event.
+ @param region An object containing information about the region that was entered.
+ */
+- (void)igLocationManager:(IGLocationManager *)manager didEnterRegion:(CLRegion *)region;
+
+/**
+ Tells the delegate that the user left the specified region.
+ 
+ @param manager The IGLocationManager object reporting the event.
+ @param region An object containing information about the region that was exited.
+ */
+- (void)igLocationManager:(IGLocationManager *)manager didExitRegion:(CLRegion *)region;
 
 @end
