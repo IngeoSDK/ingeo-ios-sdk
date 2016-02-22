@@ -22,7 +22,7 @@
                                    text:(NSString *)text
                                 openURL:(NSString *)url
                                  repeat:(BOOL)repeat
-                    registerResultBlock:(void (^)(NSError *error, IGNotification *notification))result;
+                    registerResultBlock:(void (^)(NSError *error, NSString *identifier))result;
 
 + (NSArray *)activeNotifications;
 

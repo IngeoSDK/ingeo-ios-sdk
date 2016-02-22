@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s| 
   s.name           = "IngeoSDK"
-  s.version        = "1.3.0"
+  s.version        = "1.3.1"
   s.summary        = "Ingeo iOS SDK"
   s.homepage       = "http://ingeo.io"
   s.license        = 'Apache License, Version 2.0'
