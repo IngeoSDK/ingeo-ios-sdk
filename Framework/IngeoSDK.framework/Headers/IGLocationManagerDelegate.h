@@ -45,7 +45,7 @@
  @param manager The IGLocationManager object reporting the event.
  @param region An object containing information about the region that was entered.
  */
-- (void)igLocationManager:(IGLocationManager *)manager didEnterRegion:(CLRegion *)region;
+- (void)igLocationManager:(IGLocationManager *)manager didEnterRegion:(IGRegion *)region;
 
 /**
  Tells the delegate that the user left the specified region.
@@ -53,6 +53,6 @@
  @param manager The IGLocationManager object reporting the event.
  @param region An object containing information about the region that was exited.
  */
-- (void)igLocationManager:(IGLocationManager *)manager didExitRegion:(CLRegion *)region;
+- (void)igLocationManager:(IGLocationManager *)manager didExitRegion:(IGRegion *)region;
 
 @end

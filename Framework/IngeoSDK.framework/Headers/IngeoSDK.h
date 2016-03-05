@@ -20,6 +20,5 @@
 #import "IGLocationManager.h"
 #import "IGLocation.h"
 #import "IGNotificationsManager.h"
-#import "IGTrigger.h"
-#import "IGRegionTrigger.h"
+#import "IGRegion.h"
 

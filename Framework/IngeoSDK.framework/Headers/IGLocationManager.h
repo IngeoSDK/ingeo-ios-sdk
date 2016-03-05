@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "IGLocation.h"
+#import "IGRegion.h"
 #import "IGLocationManagerDelegate.h"
 
 
@@ -133,5 +134,14 @@
  */
 + (IGMotionState)currentMotionState;
 
-@end
 
+///---------------------------------------------------------------------------------------
+/// @name ￼Regions
+///---------------------------------------------------------------------------------------
+
++ (void)startMonitoringRegion:(IGRegion *)region
+          registerResultBlock:(void (^)(NSError *error, NSString *identifier))result;
+
++ (void)stopMonitoringRegion:(IGRegion *)region;
+
+@end

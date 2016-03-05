@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 // CoreLocation
 #import <CoreLocation/CoreLocation.h>
-#import "IGTrigger.h"
+#import "IGRegion.h"
 
 @class UILocalNotification;
 
@@ -17,7 +17,7 @@
 
 @interface IGNotification : NSObject
 
-@property (nonatomic, strong) IGTrigger *trigger;
+@property (nonatomic, strong) IGRegion *region;
 @property (nonatomic, assign) BOOL repeat;
 @property (nonatomic, strong) UILocalNotification *notification;
 

@@ -18,7 +18,7 @@
 + (BOOL)isLocalNotificationsPermissionAllowed;
 
 
-+ (void)registerNotificationTriggeredBy:(IGTrigger *)trigger
++ (void)registerNotificationTriggeredBy:(IGRegion *)region
                                    text:(NSString *)text
                                 openURL:(NSString *)url
                                  repeat:(BOOL)repeat
