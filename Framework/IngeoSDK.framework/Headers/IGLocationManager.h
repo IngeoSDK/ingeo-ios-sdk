@@ -144,4 +144,6 @@
 
 + (void)stopMonitoringRegion:(IGRegion *)region;
 
++ (NSArray *)monitoredRegions;
+
 @end

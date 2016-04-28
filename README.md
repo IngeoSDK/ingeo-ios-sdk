@@ -8,10 +8,12 @@
 
 ## Overview
 
-IngeoSDK is a power-efficient location manager wrapper for iOS (Swift and Objective-C). It powers your app with
-an always-on location tracking. It uses unique algorithms to dynamically adjust GPS power according to user
-behaviour and whereabouts. Built to support iOS7 , iOS8 and iOS9, your app will
-get the most relevant location data while in foreground or background - even when network is disconnected. Battery consumption is just 1% per hour. Location tracking should be automatic and just-work, so you can focus on building your app.
+IngeoSDK is a power-efficient location manager for iOS (Swift and Objective-C), which extends and improves CoreLocation.  
+It uses unique algorithms to dynamically and constantly adjust CoreLocation's tracking configuration parameters according to user's
+motion, behavior, speed and whereabouts. Thus enabling suited configuration scheme for optimized accuracy and minimum power consumption in real-time.  
+Your app and/or server will receive the most relevant location data while in foreground or background - even when network is disconnected.
+Off-course, or bad location samples are filtered out for you. Battery consumption is just ~2% per hour.  
+Supports iPhone, iPad, iPod Touch running iOS 7.0+
 
 For a full list of features visit: http://ingeo.io/sdk
 
@@ -70,7 +72,7 @@ For a full list of features visit: http://ingeo.io/sdk
    IGLocationManager.startUpdatingLocation()
    ```
 
-4. Get tha honey  
+4. Get the honey  
    Implement IGLocationManagerDelegate methods in your delegate.    
 
    Swift:
@@ -97,10 +99,10 @@ For a full list of features visit: http://ingeo.io/sdk
     ```
 
 5. That's it. you've just enabled constant location monitoring.  
-   You may also login to http://admin.ingeo.io to access the analytics dashboard.
+   Sit and watch your users on the Admin Dashboard http://admin.ingeo.io.
 
 ## API Documentation
-   Full API reference (jazzy): http://ingeo.io/sdk/docs
+   Full API reference: http://ingeo.io/sdk/docs
 
 ## License
    Apache v2.0
