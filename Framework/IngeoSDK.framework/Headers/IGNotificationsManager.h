@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "IGNotification.h"
 
-@interface IGNotificationsManager : NSObject
+@interface IGNotificationsManager: NSObject
 
 
 + (void)requestForLocalNotificationsPermission;
