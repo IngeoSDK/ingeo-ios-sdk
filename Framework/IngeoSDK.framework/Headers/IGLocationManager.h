@@ -91,9 +91,19 @@
 ///---------------------------------------------------------------------------------------
 
 /**
- Starts the location monitoring service.
+ Starts the Always-On location monitoring service.
  */
 + (void)startUpdatingLocation;
+
+/**
+ Starts the Always-On location monitoring service.
+ */
++ (void)startUpdatingLocationAlwaysOn;
+
+/**
+ Starts the When-In-Use location monitoring service.
+ */
++ (void)startUpdatingLocationWhenInUse;
 
 /**
  Stops the location monitoring service.

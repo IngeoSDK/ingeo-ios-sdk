@@ -69,7 +69,11 @@ For a full list of features visit: http://ingeo.io/sdk
    
 3. Start Location Monitoring
    ```swift
-   IGLocationManager.startUpdatingLocation()
+   IGLocationManager.startUpdatingLocationAlwaysOn()
+   ```
+   Or
+   ```swift
+   IGLocationManager.startUpdatingLocationWhenInUse()
    ```
 
 4. Get the honey  
