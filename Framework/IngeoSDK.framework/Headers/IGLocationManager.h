@@ -85,6 +85,17 @@
  */
 + (void)setCustomHTTPHeaders:(NSDictionary *)headers;
 
+///---------------------------------------------------------------------------------------
+/// @name ￼Location Monitoring Authorization
+///---------------------------------------------------------------------------------------
+
+/**
+ Asks the user for the specified type of location authorization and alert if denied or location
+ services are off.
+ Calling this method is only optional.
+ */
++ (void)promptAuthorization:(CLAuthorizationStatus)type;
+
 
 ///---------------------------------------------------------------------------------------
 /// @name ￼Location Monitoring Activation and Deactivation
@@ -134,8 +145,17 @@
 /// @name ￼Retrieve Location Data
 ///---------------------------------------------------------------------------------------
 
+typedef void (^IGQueryCompletionHandler)(IGLocation *igLocation, NSError *error);
+
 /**
- Returns a IGLocation object representing the latest location measurement taken by IngeoSDK.
+ Calls the completion handler once a valid location is determined.
+ This method will invoke When-In-Use authorization prompt if needed and will run
+ regardless of the current location monitoring status (started or stopped).
+ */
++ (void)queryCurrentLocation:(IGQueryCompletionHandler)handler;
+
+/**
+ Returns a IGLocation object representing the latest valid location measurement taken by IngeoSDK.
  */
 + (IGLocation *)currentLocation;
 
